@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1IviVYKF8hYlJroLf6TvV8UCYrnVaSfP4?alt=media&key=AIzaSyDi2B3JWnHZwePbZc1GoYAGXQ2fBfDuO9s'
+export_file_name = 'tennis_squash_model_1'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['squash', 'tennis']
 path = Path(__file__).parent
 
 app = Starlette()
